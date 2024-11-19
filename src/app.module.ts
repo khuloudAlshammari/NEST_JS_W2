@@ -8,6 +8,7 @@ import { User } from './user/entities/user.entity';
 import { AuthModule } from './auth/auth.module';
 import { Auth } from './auth/entities/auth.entity';
 import { Test } from './test/entities/test.entity';
+import { ArticlesModule } from './articles/articles.module';
 
 const entitiesPath = __dirname + '/**/*.entity{.ts,.js}';
 
@@ -27,6 +28,7 @@ const entitiesPath = __dirname + '/**/*.entity{.ts,.js}';
       synchronize: true,
 
     }),
+     ArticlesModule,
  
     ],
   controllers: [AppController],

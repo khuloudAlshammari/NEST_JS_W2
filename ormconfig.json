@@ -1,0 +1,22 @@
+{
+
+  "type": "mysql",
+  "host": "localhost",
+  "port": 5432,
+  "username": "root",
+  "password": "",
+  "database": "DB_HM_MSR_WEEK",
+  "synchronize": false,
+  "logging": true,
+  "entities": [
+    "src/articles/entities/*.ts",
+    "src/auth/entities/*.ts",
+    "src/user/entities/*.ts"
+  ],
+  "migrations": [
+    "src/migrations/**/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "src/migrations"
+  }
+}
